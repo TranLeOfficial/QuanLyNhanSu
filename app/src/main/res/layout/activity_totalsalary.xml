@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duan_quanlynhansu.GiaoDien.TotalSalaryActivity">
+
+    <!-- TextView Mô tả Tên Quản lý Nhân Sự-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xanhla"
+        android:gravity="center"
+        android:text="Quản Lý Nhân Sự"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- TextView Mô tả Thông tin Lương Tháng-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Danh Sách Nhân Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- ListView Danh sách Lương Tháng-->
+    <ListView
+        android:id="@+id/lvTotalSalary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

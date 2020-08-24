@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TextView Mô tả Thông tin Thêm Nhân Viên-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <!-- ImageView Hình ảnh cho Nhân Viên-->
+        <ImageView
+            android:id="@+id/imgStaffView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_account"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameStaffView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Nguyễn Văn A"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvCodeManageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="NV001"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

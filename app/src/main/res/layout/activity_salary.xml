@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duan_quanlynhansu.GiaoDien.SalaryActivity">
+
+    <!-- TextView Mô tả Tên Quản lý Nhân Sự-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xanhla"
+        android:gravity="center"
+        android:text="Quản Lý Nhân Sự"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- TextView Mô tả Thông tin Nhân Viên-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Thông tin Nhân Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Thông tin cần cho Lương-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên Nhân Viên:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvCodeStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Mã Nhân Viên:"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNameStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Nguyễn Thị Dã Vy"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtCodeStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TT001"
+                android:textSize="15dp"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Các Thông tin cho Bảo Hiểm-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Các loại Bảo Hiểm"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- CheckBox cho Bảo hiểm Xã hội-->
+    <CheckBox
+        android:id="@+id/ckbSocially"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bảo hiểm xã hội "></CheckBox>
+
+    <!-- CheckBox cho Bảo hiểm lao động-->
+    <CheckBox
+        android:id="@+id/ckbLabory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bảo hiểm lao động"></CheckBox>
+
+    <!-- CheckBox cho Bảo hiểm Tai nạn-->
+    <CheckBox
+        android:id="@+id/ckbAccident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bảo hiểm tai nạn"></CheckBox>
+
+    <!-- CheckBox cho Bảo hiểm Y tế-->
+    <CheckBox
+        android:id="@+id/ckbMedical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bảo hiểm y tế"></CheckBox>
+
+    <!-- TextView Mô tả Các Thông tin cho Bảo Hiểm-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Lương"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- TextView Mô tả Các Thông tin Lương-->
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="0 đồng"
+        android:textSize="15dp"></TextView>
+
+    <!-- TextView Mô tả Chức Năng-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Chức năng"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Button cần thiết-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <!-- Button Lưu Lương-->
+        <Button
+            android:id="@+id/btnSaveSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Lưu Lương"></Button>
+
+        <!-- Button Sửa Lương-->
+        <Button
+            android:id="@+id/btnUpdateSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sửa Lương"></Button>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Danh Sách Lương-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Danh Sách Nhân Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- ListView Danh sách Lương-->
+    <ListView
+        android:id="@+id/lvSalary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

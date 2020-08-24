@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duan_quanlynhansu.GiaoDien.DateActivity">
+
+    <!-- TextView Mô tả Tên Quản lý Nhân Sự-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xanhla"
+        android:gravity="center"
+        android:text="Quản Lý Nhân Sự"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- TextView Mô tả Thông tin Chấm Công-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Thông tin Chấm Công"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Thông tin cần cho Chấm Công-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên Nhân Viên:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvCodeStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Mã Nhân Viên:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvStartH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Giờ bắt đầu:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvFinishH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:text="Giờ kết thúc:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ghi chú:"
+                android:textSize="15dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNameStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Nguyễn Thị Dã Vy"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtCodeStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="TT001"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtStartH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="08:00"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtFinishH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="18:00"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="..................."
+                android:textSize="15dp"></EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Thông tin Chức Năng-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Chức năng"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Button cần thiết-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <!-- Button Lưu Chấm Công-->
+        <Button
+            android:id="@+id/btnSaveTKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Lưu Chấm Công"></Button>
+
+        <!-- Button Sửa Chấm Công-->
+        <Button
+            android:id="@+id/btnUpdateTKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sửa Chấm Công"></Button>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Danh Sách Chấm Công-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Danh Sách Nhân Viên"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- ListView Danh sách Chấm Công-->
+    <ListView
+        android:id="@+id/lvTimeKeeping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

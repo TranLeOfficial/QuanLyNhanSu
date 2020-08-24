@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duan_quanlynhansu.GiaoDien.ManageAccountActivity">
+
+    <!-- TextView Mô tả Tên Quản lý Nhân Sự-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xanhla"
+        android:gravity="center"
+        android:text="Quản Lý Nhân Sự"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- TextView Mô tả Thông tin Tài Khoản-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Thông tin Tài Khoản"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Thông tin cần cho Tài Khoản-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tên Tài Khoản:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Mật Khẩu:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvRePW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Nhập lại Mật khẩu:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Email:"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Số điện thoại:"
+                android:textSize="15dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="NV001TMT"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="123456"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtRePW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="123456"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="nhoktran115@gmail.com"
+                android:textSize="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="0123456789"
+                android:textSize="15dp"></EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Chức Năng-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Chức năng"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- LinearLayout Các Button cần thiết-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <!-- Button Lưu Tài Khoản-->
+        <Button
+            android:id="@+id/btnSaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Lưu Tài Khoản"></Button>
+
+        <!-- Button Sửa Tài Khoản-->
+        <Button
+            android:id="@+id/btnUpdateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Sửa Tài Khoản"></Button>
+    </LinearLayout>
+
+    <!-- TextView Mô tả Danh Sách Tài Khoản-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:text="Danh Sách Tài Khoản"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <!-- ListView Danh sách Tài Khoản-->
+    <ListView
+        android:id="@+id/lvManageAccount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
